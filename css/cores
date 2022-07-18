@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.ethereal-pink-mountain-hike-1-hex { color: #F2D5F2; }
+.ethereal-pink-mountain-hike-2-hex { color: #ECBDF2; }
+.ethereal-pink-mountain-hike-3-hex { color: #DCA7F2; }
+.ethereal-pink-mountain-hike-4-hex { color: #BB94F2; }
+.ethereal-pink-mountain-hike-5-hex { color: #8268A6; }
+
+/* Color Theme Swatches in RGBA */
+.ethereal-pink-mountain-hike-1-rgba { color: rgba(242, 213, 242, 1); }
+.ethereal-pink-mountain-hike-2-rgba { color: rgba(236, 189, 242, 1); }
+.ethereal-pink-mountain-hike-3-rgba { color: rgba(220, 167, 242, 1); }
+.ethereal-pink-mountain-hike-4-rgba { color: rgba(187, 148, 242, 1); }
+.ethereal-pink-mountain-hike-5-rgba { color: rgba(130, 104, 166, 1); }
+
+/* Color Theme Swatches in HSLA */
+.ethereal-pink-mountain-hike-1-hsla { color: hsla(300, 52, 89, 1); }
+.ethereal-pink-mountain-hike-2-hsla { color: hsla(293, 67, 84, 1); }
+.ethereal-pink-mountain-hike-3-hsla { color: hsla(282, 74, 80, 1); }
+.ethereal-pink-mountain-hike-4-hsla { color: hsla(264, 78, 76, 1); }
+.ethereal-pink-mountain-hike-5-hsla { color: hsla(265, 25, 52, 1); }
