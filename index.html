@@ -61,28 +61,35 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-1.webp" style="object-fit: cover;">
+                    <img class="position-absolute h-100 w-100" src="img/capa_04_editado.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Miriam Mendes</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Música para seu evento</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="https://youtu.be/YdUjs-AVYJY" data-target="#videoModal">
+                            <button type="button" class="btn-play mx-auto" data-toggle="vide" onclick=toggleAudio()>
+                                <audio id="myAudio">
+                                    <source src="media/É o Amor - Miriam Mendes.mp4">
+                                </audio>
                                 <span></span>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/capa_02_editado.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Miriam Mendes</h1>                     
-                            <button type="button" class="btn-play mx-auto" data-toggle="vide"
-                                src="img/WhatsApp Video 2022-07-02 at 14.48.14.mp4" data-target="#videoModal">
-                                <span></span>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Miriam Mendes</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Música para seu evento</h3>
+                            </div>                     
+                            <button type="button" class="btn-play mx-auto" data-toggle="vide" onclick=toggleAudio() >
+                                <audio id="myAudio">
+                                    <source src="media/É o Amor - Miriam Mendes.mp4">
+                                </audio>
+                            <span></span>
                             </button>
                         </div>
                     </div>
@@ -102,24 +109,225 @@
     </div>
     <!-- Carousel End -->
 
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>     
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+ 
+    <!-- Agenda -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Agenda</h6>
+                <h1 class="font-secondary display-4">Junho 2023</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">02 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Restaurante Vecchio Cancian</p>
+                            <p class="m-0">Piracicaba-SP</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">03 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Hidelma Lanches</p>
+                            <p class="m-0">Piracicaba-SP</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid ml-md-3" src="" alt="">
+                    </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid mr-md-3" src="" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">09 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Evento Particular</p>
+                            <p class="m-0">Piracicaba-SP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">10 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Evento Particular</p>
+                            <p class="m-0">Piracicaba-SP</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid ml-md-3" src="" alt="">
+                    </div>
+                
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid mr-md-3" src="" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">16 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Bar do Bigode</p>
+                            <p class="m-0">Piracicaba-SP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">17 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Vecchio Cancian</p>
+                            <p class="m-0">Piracicaba-SP</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid ml-md-3" src="" alt="">
+                    </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid mr-md-3" src="" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">23 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Festa de São João - Forró Fura Chinela</p>
+                            <p class="m-0">Valente-BA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">24 Junho 2023</h4>
+                            <p class="text-uppercase mb-2">Festa de São João - Forró Fura Chinela</p>
+                            <p class="m-0">Cachoeira-BA</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid ml-md-3" src="" alt="">
+                    </div>
+        </div>
+    </div>
+
+    <!-- Agenda End -->
+
+        <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galeria</h6>
+            <h1 class="font-secondary display-4 text-white">Alguns eventos destaque</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria01.jpeg" alt="">
+                <a href="img/galeria01.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria02.jpg" alt="">
+                <a href="img/galeria02.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria03.png" alt="">
+                <a href="img/galeria03.png" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria04.jpg" alt="">
+                <a href="img/galeria04.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria05.jpg" alt="">
+                <a href="img/galeria05.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria06.jpg" alt="">
+                <a href="img/galeria06.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria071.jpg" alt="">
+                <a href="img/galeria07.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria08.jpeg" alt="">
+                <a href="img/galeria08.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria09.jpeg" alt="">
+                <a href="img/galeria09.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria10 (2).jpeg" alt="">
+                <a href="img/galeria10 (2).jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria11.jpeg" alt="">
+                <a href="img/galeria11.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria12.jpeg" alt="">
+                <a href="img/galeria12.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria13.jpeg" alt="">
+                <a href="img/galeria13.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria14.jpeg" alt="">
+                <a href="img/galeria14.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/galeria15.jpeg" alt="">
+                <a href="img/galeria15.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
             </div>
         </div>
     </div>
-    <!-- Video Modal End -->
+    <!-- Gallery End -->
 
 
     <!-- About Start -->
@@ -188,166 +396,7 @@
     </div>
     <!-- About End -->
 
-
-    <!-- Agenda -->
-    <div class="container-fluid py-5" id="story">
-        <div class="container pt-5 pb-3">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Agenda</h6>
-                <h1 class="font-secondary display-4">Junho 2022</h1>
-                <i class="far fa-heart text-dark"></i>
-            </div>
-            <div class="container timeline position-relative p-0">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Evento</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Agenda End -->
-
-
-    <!-- Gallery Start -->
-    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galeria</h6>
-            <h1 class="font-secondary display-4 text-white">Alguns eventos destaque</h1>
-            <i class="far fa-heart text-white"></i>
-        </div>
-        <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/Estação.jpeg" alt="">
-                <a href="img/Estação.jpeg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/Evento particular400.jpg" alt="">
-                <a href="img/Evento particular.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Gallery End -->
+    
 
 
     <!-- Feedback -->
@@ -386,7 +435,7 @@
     <!-- Event End -->
 
 
-    <!-- Detalhes -->
+    <!-- Detalhes 
     <div class="container-fluid py-5" id="family">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
@@ -496,7 +545,7 @@
             </div>
         </div>
     </div>
-    <!-- Friends & Family End -->
+    <!-- Friends & Family End --> 
 
 
     <!-- RSVP Start -->

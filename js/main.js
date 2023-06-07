@@ -1,3 +1,14 @@
+    //Play/Pause Musica
+    var audio = document.getElementById("myAudio");
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    };
+
 (function ($) {
     "use strict";
 
@@ -9,6 +20,7 @@
             $('.navbar').fadeOut('slow').css('display', 'none');
         }
     });
+
 
 
     // Smooth scrolling on the navbar links
